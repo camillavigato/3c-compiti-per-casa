@@ -14,16 +14,24 @@ int main(){
 
 void selection_sort(int v[], int dim)
 {
-    int comodo,ind_min;
-    for(int i = 0; i < dim-1; i++){
-        ind-min=i;
+    int comodo, ind_min;
+        for(int i = 0; i < dim-1; i++){
+                ind_min=i;
         for (int j = i+1; j < dim; j++){
-            if (v[ind_min] > v[j]){
-               ind_min=j;
+            int (v[ind_min]>v[j])
+            {
+
+                ind_min=j;
             }
-            v[i]=comodo;
-            v[i]=v[ind_min];
-            v[ind_min]=comodo;
         }
-    }
+        comodo=v[i];
+        v[i]=v[ind_min];
+        v[ind_min]
+        }
 }//end selection sort
+void stampa(int v[], int dim)
+{
+    for(int i = 0; i < dim; i++){
+            cout << v[i] << " ";
+
+    }
