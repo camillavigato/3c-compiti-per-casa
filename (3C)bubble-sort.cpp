@@ -20,7 +20,7 @@ int main(){
     return 0;
 }
 
-void bubble_sort(int v[], int dim){
+void bubble_sort(int v[], int dim){ // il bubble sort consiste nello scambio di elementti a due a due
     int i,k,sup,comodo;
     bool continua = true;
     k = dim;
@@ -37,7 +37,9 @@ void bubble_sort(int v[], int dim){
                 // scambio tra v[i] e v[i+1]
                 scambio(v, dim, i, i+1);
                 continua = true;
-                k = i;
+                k = i+1; //modifica effetuata per il giusto funzionamento del bubble sort.
+                         //adesso l'arrey che viene visualizzato è corretto.
+                         //k=i diventa K=i+1
 
             }
         }//fine ciclo for
